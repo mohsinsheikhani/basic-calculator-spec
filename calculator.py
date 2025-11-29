@@ -10,6 +10,8 @@ def add(a: int | float, b: int | float) -> int | float:
         >>> add(5, 3.5)
         8.5
     """
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError()
     return a + b
 
 
@@ -22,6 +24,8 @@ def subtract(a: int | float, b: int | float) -> int | float:
         >>> subtract(3, 10)
         -7
     """
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError()
     return a - b
 
 
@@ -34,6 +38,8 @@ def multiply(a: int | float, b: int | float) -> int | float:
         >>> multiply(2.5, 4)
         10.0
     """
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError()
     return a * b
 
 
@@ -49,6 +55,8 @@ def divide(a: int | float, b: int | float) -> float:
     Raises:
         ZeroDivisionError: If b is zero.
     """
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError()
     if b == 0:
         raise ZeroDivisionError("Cannot divide by zero")
     return a / b
