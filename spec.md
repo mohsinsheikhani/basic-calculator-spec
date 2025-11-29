@@ -1,5 +1,9 @@
 # Basic Calculator Module Specification
 
+## Purpose
+
+A Python module providing four basic arithmetic operations (addition, subtraction, multiplication, division) for developers who need reliable mathematical calculations in their applications.
+
 ## User Stories
 
 ### Addition
